@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Soporte — Agente de Predicciones</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Libre+Franklin:wght@400;500;600;700&display=swap" rel="stylesheet">
+<style>
+  :root {
+    --bg: #f9fafb;
+    --surface: #ffffff;
+    --text-primary: #111827;
+    --text-secondary: #4b5563;
+    --text-muted: #9ca3af;
+    --border: #e5e7eb;
+    --accent: #db2777;
+    --accent-bg: #fce7f3;
+    --accent-text: #9d174d;
+  }
+  @media (prefers-color-scheme: dark) {
+    :root {
+      --bg: #17151a;
+      --surface: #201d24;
+      --text-primary: #f3f2f5;
+      --text-secondary: #b7b3c0;
+      --text-muted: #8a8593;
+      --border: #332f3a;
+      --accent: #f472b6;
+      --accent-bg: #3a2030;
+      --accent-text: #f9a8d4;
+    }
+  }
+  * { box-sizing: border-box; }
+  body {
+    margin: 0;
+    background: var(--bg);
+    color: var(--text-primary);
+    font-family: "Libre Franklin", system-ui, sans-serif;
+    padding: 0 16px;
+  }
+  .wrap {
+    max-width: 680px;
+    margin: 0 auto;
+    padding: 48px 0 64px;
+  }
+  .eyebrow {
+    display: inline-block;
+    font-size: 12px;
+    font-weight: 600;
+    letter-spacing: 0.06em;
+    text-transform: uppercase;
+    color: var(--accent-text);
+    background: var(--accent-bg);
+    padding: 4px 10px;
+    border-radius: 999px;
+    margin-bottom: 16px;
+  }
+  h1 {
+    font-size: clamp(28px, 5vw, 38px);
+    font-weight: 700;
+    line-height: 1.15;
+    margin: 0 0 16px;
+  }
+  p {
+    font-size: 15.5px;
+    line-height: 1.7;
+    color: var(--text-secondary);
+    margin: 0 0 14px;
+    max-width: 65ch;
+  }
+  h2 {
+    font-size: 17px;
+    font-weight: 600;
+    margin: 32px 0 10px;
+  }
+  a { color: var(--accent); text-decoration: underline; text-underline-offset: 2px; }
+  .contact {
+    background: var(--accent-bg);
+    border-radius: 14px;
+    padding: 20px;
+    margin: 16px 0;
+  }
+  .contact p { color: var(--accent-text); margin: 0; }
+  .contact a { color: var(--accent-text); font-weight: 600; }
+  ul { margin: 0 0 14px; padding-left: 20px; }
+  li { font-size: 15.5px; line-height: 1.7; color: var(--text-secondary); margin-bottom: 6px; }
+  footer {
+    margin-top: 56px;
+    padding-top: 20px;
+    border-top: 1px solid var(--border);
+    font-size: 13px;
+    color: var(--text-muted);
+  }
+</style>
+</head>
+<body>
+
+<div class="wrap">
+  <span class="eyebrow">Agente de Predicciones</span>
+  <h1>Soporte</h1>
+
+  <p>
+    Agente de Predicciones es una app personal de pronósticos deportivos estadísticos (MLB, NFL, fútbol,
+    NBA y WNBA). Si tienes una pregunta, encontraste un problema o quieres reportar algo, escríbeme
+    directamente.
+  </p>
+
+  <div class="contact">
+    <p>Contacto: <a href="mailto:oliviitahdiaz@gmail.com">oliviitahdiaz@gmail.com</a></p>
+  </div>
+
+  <h2>Preguntas frecuentes</h2>
+  <ul>
+    <li><strong>La app no carga datos:</strong> revisa en Ajustes que la dirección del servidor y la
+    clave de acceso estén correctas.</li>
+    <li><strong>No me llegan notificaciones:</strong> confirma en Ajustes → Notificaciones que el permiso
+    esté concedido, y que las notificaciones del sistema estén habilitadas para la app en los ajustes de
+    tu teléfono.</li>
+    <li><strong>Quiero que borren mis datos:</strong> escribe al correo de arriba -- ver también la
+    <a href="./">política de privacidad</a>.</li>
+  </ul>
+
+  <footer>Agente de Predicciones — soporte</footer>
+</div>
+
+</body>
+</html>
